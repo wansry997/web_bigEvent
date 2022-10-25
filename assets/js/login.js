@@ -72,7 +72,7 @@ $('#form-reg').on('submit', function(e) {
 //登录注册表单事件
 $('#form-login').on('submit', function(e) {
     e.preventDefault()
-    $.post(`../../mock/login.json`, {
+    $.get(`../../mock/login.json`, {
         username: $('#form-login [name = username]').val(),
         userpassewd: $('#form-login [name = userpasswd]').val()
     }, (responseText) => {
@@ -80,6 +80,6 @@ $('#form-login').on('submit', function(e) {
             layer.msg(responseText.messge)
         }
         localStorage.setItem('token', responseText.token)
-            // location.href = '/index.html'
+        location.href = '/index.html'
     })
 })

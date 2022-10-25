@@ -1,0 +1,11 @@
+{
+    "status": 0,
+    "message": "获取用户基本信息成功！",
+    "data": {
+        "id": 1,
+        "username": "admin",
+        "nickname": "管理员",
+        "email": "admin@itcast.cn"
+
+    }
+}
